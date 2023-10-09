@@ -1,10 +1,13 @@
 """Median calculator."""
 """ENTER YOUR SOLUTION HERE!"""
 def median(numbers):
-    if (len(numbers) % 2 == 0):
-        return (numbers[len(numbers) // 2] + numbers[(len(numbers) // 2) - 1]) / 2
+    numLength = len(numbers)
+    numbers.sort
+    
+    if (numLength % 2 == 0):
+        return (numbers[numLength // 2] + numbers[(numLength // 2) - 1]) / 2
     else:
-        return numbers[len(numbers) // 2]
+        return numbers[numLength // 2]
 
 
 while True:
