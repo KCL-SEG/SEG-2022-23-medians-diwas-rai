@@ -2,7 +2,7 @@
 """ENTER YOUR SOLUTION HERE!"""
 def median(numbers):
     numLength = len(numbers)
-    numbers.sort
+    numbers.sort()
     
     if (numLength % 2 == 0):
         return (numbers[numLength // 2] + numbers[(numLength // 2) - 1]) / 2
